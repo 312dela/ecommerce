@@ -31,6 +31,8 @@ public class BaseTest {
     public void setupReport() {
         ExtentSparkReporter htmlReporter = new ExtentSparkReporter("reports/extent-report.html");
         htmlReporter.config().setEncoding("utf-8");
+        htmlReporter.config().setTimelineEnabled(true);
+        htmlReporter.config().enableOfflineMode(true);
         htmlReporter.config().setDocumentTitle("Automation Test Report");
         htmlReporter.config().setReportName("E-Commerce Test Report");
         htmlReporter.config().setTheme(Theme.STANDARD);
