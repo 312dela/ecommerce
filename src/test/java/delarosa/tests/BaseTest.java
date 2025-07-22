@@ -29,7 +29,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void setupReport() {
-        ExtentSparkReporter htmlReporter = new ExtentSparkReporter("test-output/extent-report.html");
+        ExtentSparkReporter htmlReporter = new ExtentSparkReporter("reports/extent-report.html");
         htmlReporter.config().setDocumentTitle("Automation Test Report");
         htmlReporter.config().setReportName("E-Commerce Test Report");
         htmlReporter.config().setTheme(Theme.STANDARD);
